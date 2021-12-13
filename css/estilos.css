@@ -1,0 +1,50 @@
+.submit{
+    font-size: 1.2em;
+    background-color: black;
+    border: 0px;
+    color: blanchedalmond;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-family: "Shadows Into Light";
+    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+ }
+
+.content{
+width: 100%;
+min-height: 50vh;
+border: solid 2px black;
+display: grid;
+grid-template-columns: repeat(5, 20%);
+grid-template-rows: auto;
+}
+
+.cuadrado {
+    width: 6rem;
+    height: 6rem;
+}
+.circulo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.cuadrado,
+.circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 2px;
+    font-weight: bold;
+    animation: inicio is case 0s 1 normal;
+}
+
+@keyframes inicio {
+    from {
+        transform: scale(0.5, 0.5);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
